@@ -1,20 +1,23 @@
 .wrapper{
-  grid-template-columns: auto;
-  grid-template-rows: auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 2fr 1fr;
   grid-template-areas:
-    "h h h h"
-    "a b b a"
-    "f f f f";
+    "o o o o"
+    "t r r f"
+    "v v v v";
 }
-.header{
-  grid-area: h;
+.one {
+  grid-area: o;
 }
-.aside{
-  grid-area: a;
+.two {
+  grid-area: t;
 }
-.bside{
-  grid-area: h;
+.three {
+  grid-area: r;
 }
-.footer{
+.four {
   grid-area: f;
+}
+.five {
+  grid-area: v;
 }
