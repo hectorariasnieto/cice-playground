@@ -1,0 +1,11 @@
+.wrapper {
+  grid-template-columns: 2fr 5fr;
+}
+.aside {
+  display: grid;
+  grid-area: ;
+}
+.main {
+  display: grid;
+  grid-template-rows: 2fr 5fr;
+}
