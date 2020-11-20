@@ -3,13 +3,15 @@ import { showB } from './b.js'
 import { showC } from './c.js'
 
 export function selection() {
-  var choose = prompt('Selecciona una opción', 'a, b, c')
+  var choose = prompt('Selecciona una opción: a, b, c')
 
   if (choose == 'a') {
-    console.log(showA())
+    showA()
   } else if (choose == 'b') {
-    console.log(showB())
-  } else {
-    console.log(showC())
+    showB()
+  } else if {
+    showC()
+  } else{
+    alert('no me vale')
   }
 }
