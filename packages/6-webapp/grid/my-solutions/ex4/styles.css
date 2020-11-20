@@ -1,10 +1,10 @@
-.wrapper{
+.wrapper {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 2fr 1fr;
   grid-template-areas:
-    "o o o o"
-    "t r r f"
-    "v v v v";
+    'o o o o'
+    't r r f'
+    'v v v v';
 }
 .one {
   grid-area: o;
