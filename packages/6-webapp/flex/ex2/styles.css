@@ -2,20 +2,6 @@
   display: flex;
 }
 
-<<<<<<< HEAD
-.wrap1 {
-  flex-basis: 1;
-}
-
-.wrap2 {
-}
-
-.box {
-  align-self: flex-start;
-}
-
-.box2 {
-=======
 .content {
   display: flex;
   flex-direction: column;
@@ -28,5 +14,4 @@
 
 .main {
   flex: 4;
->>>>>>> 4f90db84d6341f15b27f071a8195deea5ea9f604
 }
