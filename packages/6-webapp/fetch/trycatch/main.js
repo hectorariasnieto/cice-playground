@@ -22,13 +22,3 @@ createPost.addEventListener('click', () => {
     body: JSON.stringify(post, null, 2)
   })
 })
-
-function throwError(){
-  throw new Error('wtf?')
-}
-try {
-  throwError()
-} catch (e) {
-  expect(e).toEqual(new Error("wtf?"))
-}
-
