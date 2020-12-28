@@ -1,0 +1,29 @@
+.wrapper{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.aside{
+  display:flex;
+  flex-basis: 20%;
+  height: 100%;
+}
+.main-content{
+  display: flex;
+  flex-direction: column;
+  flex-basis:80%;
+  height: 100%;
+}
+
+.right {
+  flex-basis: 100%;
+}
+
+.up{
+  flex-basis: 25%;
+}
+
+.down{
+  flex-basis: 75%;
+}
