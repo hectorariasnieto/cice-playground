@@ -1,0 +1,27 @@
+.wrapper{
+  display:flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.frame{
+  flex-basis: 20%
+
+}
+
+.main-content{
+  display: flex;
+  flex-basis: 60%;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.center{
+  flex-shrink: 2;
+  flex-basis:60%;
+}
+
+.side{
+  flex-shrink: 1;
+  flex-basis:20%;
+}
