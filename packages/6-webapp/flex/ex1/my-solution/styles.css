@@ -1,0 +1,11 @@
+.wrapper{
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+}
+.top, .bottom {
+  flex-basis: 20%;
+}
+.main{
+  flex-basis: 60%;
+}
