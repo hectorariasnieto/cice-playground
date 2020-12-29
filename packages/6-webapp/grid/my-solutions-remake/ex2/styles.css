@@ -1,0 +1,22 @@
+.wrapper{
+  display: grid;
+  grid-template-areas:
+  "left header header header"
+  "left main main main"
+  "left main main main"
+  "left main main main"
+  "left main main main"
+;
+}
+.aside{
+  grid-area: left;
+}
+
+.header{
+  grid-area: header;
+}
+
+.main{
+  grid-area: main;
+}
+
