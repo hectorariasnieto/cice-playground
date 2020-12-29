@@ -1,0 +1,38 @@
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.top{
+  display: flex;
+
+}
+
+.main-content{
+  display: flex;
+}
+
+.footer{
+  display: flex;
+}
+
+.f1{
+  flex-grow: 1;
+}
+
+.f2{
+  flex-grow: 2;
+}
+
+.f3{
+  flex-grow: 3;
+}
+
+.f4{
+  flex-grow: 4;
+}
+
+.f5{
+  flex-grow: 5;
+}
