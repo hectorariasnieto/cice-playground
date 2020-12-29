@@ -1,0 +1,29 @@
+.wrapper{
+  grid-template-areas:
+  "head head head head"
+  "aside main main bside"
+  "aside main main bside"
+  "aside main main bside"
+  "footer footer footer footer"
+;
+}
+
+.head{
+  grid-area: head;
+}
+
+.aside{
+  grid-area: aside;
+}
+
+.bside{
+  grid-area: bside;
+}
+
+.main{
+  grid-area: main;
+}
+
+.footer{
+  grid-area: footer;
+}
