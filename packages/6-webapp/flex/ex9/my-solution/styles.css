@@ -1,0 +1,42 @@
+.wrapper{
+  display:flex;
+}
+
+.aside{
+  display: flex;
+  flex-direction: column;
+}
+
+.bside{
+  display: flex;
+  flex-direction: column;
+}
+
+.topbottom{
+  display: flex;
+  flex-direction: row;
+}
+
+.middle{
+  display: flex;
+}
+
+.ghost{
+  border-color: transparent;
+}
+
+.g1{
+  flex-grow: 2;
+}
+
+.g2{
+  flex-grow: 5;
+}
+
+.g3{
+  flex-grow: 8;
+}
+
+.b100{
+  flex-basis: 100%;
+}
