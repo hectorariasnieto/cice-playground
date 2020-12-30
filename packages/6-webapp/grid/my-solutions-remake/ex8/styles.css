@@ -1,0 +1,16 @@
+.wrapper{
+  display: grid;
+  grid-template: 1fr 3fr 1fr / 1fr 2fr 1fr;
+}
+
+.top{
+  grid-area: 1/1/2/2;
+}
+
+.middle{
+  grid-area: 2/2/3/4;
+}
+
+.bottom{
+  grid-area: 3/3/4/4;
+}

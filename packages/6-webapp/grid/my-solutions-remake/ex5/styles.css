@@ -1,0 +1,28 @@
+.wrapper{
+  display: grid;
+  grid-template: repeat(4, 1fr) / repeat(4,1fr);
+}
+
+.a{
+  grid-area: 1/1/2/4;
+}
+
+.b{
+  grid-area: 1/4/2/5;
+}
+
+.c{
+  grid-area: 2/1/4/2;
+}
+
+.d{
+  grid-area: 2/2/4/5;
+}
+
+.e{
+  grid-area: 4/1/5/3;
+}
+
+.f{
+  grid-area: 4/3/5/5;
+}

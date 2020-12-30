@@ -1,0 +1,29 @@
+.wrapper{
+  display: grid;
+  grid-template-areas:
+  "top . top2 top2"
+  "aside main main main"
+  "aside main main main"
+  "aside . bottom bottom"
+;
+}
+
+.top{
+  grid-area: top;
+}
+
+.top2{
+  grid-area: top2;
+}
+
+.aside{
+  grid-area: aside;
+}
+
+.main{
+  grid-area: main;
+}
+
+.bottom{
+  grid-area:bottom;
+}
