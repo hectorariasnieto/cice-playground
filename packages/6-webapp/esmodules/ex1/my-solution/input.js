@@ -5,11 +5,11 @@ import { showC } from './c.js'
 export function selection() {
   var choose = prompt('Selecciona una opción: a, b, c')
 
-  if (choose == 'a') {
+  if (choose === 'a') {
     showA()
-  } else if (choose == 'b') {
+  } else if (choose === 'b') {
     showB()
-  } else if {
+  } else if (choose === 'c'){
     showC()
   } else{
     alert('no me vale')
