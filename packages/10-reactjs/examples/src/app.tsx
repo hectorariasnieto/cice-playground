@@ -13,15 +13,23 @@ import { UseReducerRefactor3 } from './reducer/use-reducer-refactor-3'
 import { NumericInput } from './numeric-input'
 import { BindStyleCustomProperty } from './bind-style-custom-property'
 import styles from './app.module.css'
+import { Styling } from './styling'
+import { ThemeContextComponent } from './theme-context'
+import { ClassComponent } from './class-component'
+import { AppErrorBoundary } from './error-boundaries'
+import { Timer } from './timer'
+import { UseRef } from './use-ref'
 
 export function App() {
   return (
     <BrowserRouter>
       <Route path="/" exact>
         <main className={styles.wrapper}>
-          <section>
+          <header className={styles.header}>
             <Link to="/numeric-input">Numeric Input</Link>
+            <Link to="/styling">Styling</Link>
             <Link to="/context">Context</Link>
+            <Link to="/theme-context">Theme context</Link>
             <Link to="/custom-hooks">Custom Hooks</Link>
             <Link to="/use-effect">Use Effect</Link>
             <Link to="/use-reducer">Use Reducer</Link>
@@ -31,8 +39,15 @@ export function App() {
             <Link to="/use-reducer-refactor-2">Use Reducer Refactor 2</Link>
             <Link to="/use-state-immutable">Use State Immutable</Link>
             <Link to="/bind-style-custom-property">Bind Style Custom Property</Link>
-          </section>
+            <Link to="/class-component">Class component</Link>
+            <Link to="/error-boundary">Error boundary</Link>
+            <Link to="/timer">Timer</Link>
+            <Link to="/use-ref">Use ref</Link>
+          </header>
         </main>
+      </Route>
+      <Route path="/styling">
+        <Styling />
       </Route>
       <Route path="/numeric-input">
         <NumericInput />
@@ -42,6 +57,9 @@ export function App() {
       </Route>
       <Route path="/context">
         <Context />
+      </Route>
+      <Route path="/theme-context">
+        <ThemeContextComponent />
       </Route>
       <Route path="/custom-hooks">
         <CustomHooks />
@@ -70,9 +88,20 @@ export function App() {
       <Route path="/use-state-immutable">
         <UseStateImmutable />
       </Route>
-
       <Route path="/bind-style-custom-property">
         <BindStyleCustomProperty />
+      </Route>
+      <Route path="/class-component">
+        <ClassComponent />
+      </Route>
+      <Route path="/error-boundary">
+        <AppErrorBoundary />
+      </Route>
+      <Route path="/timer">
+        <Timer />
+      </Route>
+      <Route path="/use-ref">
+        <UseRef />
       </Route>
     </BrowserRouter>
   )
