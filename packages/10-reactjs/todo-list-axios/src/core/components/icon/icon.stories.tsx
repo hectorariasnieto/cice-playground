@@ -1,9 +1,8 @@
-import React from 'react'
 import { Icon } from './icon'
 
 export default {
   title: 'Icon',
-  component: Icon,
+  component: Icon
 }
 
 export const base = () => <Icon name={'check'}></Icon>

@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import React, { FC, useState } from 'react'
 import { TodoList } from './todo-list/todo-list'
 import { Todo } from './todo'
 import { TodoCreate } from './todo-create/todo-create'
 
-export const App: React.FC = () => {
+export const App: FC = () => {
   const [todos, setTodos] = useState<Todo[]>([])
 
   function createTodo(todoText: string) {
@@ -13,11 +13,11 @@ export const App: React.FC = () => {
 
   function completeTodo(id: number) {
     setTodos(
-      todos.map((todo) => {
+      todos.map(todo => {
         if (todo.id === id) {
           return {
             ...todo,
-            completed: !todo.completed,
+            completed: !todo.completed
           }
         }
 
@@ -28,7 +28,7 @@ export const App: React.FC = () => {
 
   return (
     <main>
-      <TodoList todos={todos} onCompleteTodo={completeTodo}></TodoList>
+      <TodoList todos={todos} onCompleteTodo={completeTodo} />
       <TodoCreate onCreate={createTodo} todos={todos} />
     </main>
   )

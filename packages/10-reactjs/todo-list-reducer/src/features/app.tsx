@@ -1,4 +1,4 @@
-import React, { useReducer, useState } from 'react'
+import { FC, useReducer, useState } from 'react'
 import styles from './app.module.css'
 import { bind } from '../utils/bind'
 import { reducer } from './reducer'
@@ -10,17 +10,17 @@ export function useTodos() {
   return { todos, dispatch }
 }
 
-export const App: React.FC = () => {
+export const App: FC = () => {
   const { todos, dispatch } = useTodos()
   const [todoText, setTodoText] = useState('')
 
-  const isTodoDuplicated = todos.map((todo) => todo.text).includes(todoText)
+  const isTodoDuplicated = todos.map(todo => todo.text).includes(todoText)
   const clearTodo = () => setTodoText('')
 
   return (
     <main>
       <ul>
-        {todos.map((todo) => (
+        {todos.map(todo => (
           <li
             onClick={() => dispatch({ type: 'COMPLETE_TODO', payload: { id: todo.id } })}
             className={cx({ completed: todo.completed })}
@@ -30,18 +30,19 @@ export const App: React.FC = () => {
         ))}
       </ul>
       <form
-        onSubmit={(event) => {
+        name="Create todo"
+        onSubmit={event => {
           event.preventDefault()
           dispatch({
             type: 'CREATE_TODO',
-            payload: { id: Math.floor(Math.random() * 1000), text: todoText },
+            payload: { id: Math.floor(Math.random() * 1000), text: todoText }
           })
           clearTodo()
         }}
       >
         <label>
           Todo
-          <input value={todoText} onChange={(event) => setTodoText(event.target.value)} />
+          <input value={todoText} onChange={event => setTodoText(event.target.value)} />
         </label>
         <button onClick={clearTodo}>Clear todo</button>
         <button type="submit" disabled={isTodoDuplicated}>

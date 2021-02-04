@@ -1,12 +1,12 @@
-import React, { useState } from 'react'
+import { FC, useState } from 'react'
 import { PasswordInput } from './password-input'
 
 export default {
   title: 'PasswordInput',
-  component: PasswordInput,
+  component: PasswordInput
 }
 
-const WithState: React.FC<{ isRequired: boolean }> = ({ isRequired }) => {
+const WithState: FC<{ isRequired: boolean }> = ({ isRequired }) => {
   const [value, setValue] = useState('')
   return (
     <>
