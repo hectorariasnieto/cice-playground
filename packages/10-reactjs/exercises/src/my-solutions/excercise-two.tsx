@@ -1,4 +1,4 @@
-import {FC} from 'react'
+import {FC, useState} from 'react'
 
 export const ExerciseTwo: FC = () =>{
   const [counter, setCounter] = useState(0)

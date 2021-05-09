@@ -18,11 +18,12 @@ export const ExerciseOne: FC = () => {
 //crear rango desde
 
 export const ExerciseOneRange: FC = () => {
-  const numbers = Array.from({length:50}, (v,k) => k)
+  const range = Array.from({length:50}, (k,v) => v)
 
   return (
     <ul>
-      <li>{range(50).map(x => <li key={x}>{x}</li>)}</li>
+      {range.map(x =>
+        <li key={x}>{x + 1}</li>)}
     </ul>
   )
 }
